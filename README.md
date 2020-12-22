@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build core` and then `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run (1) `npm install` (2) `ng build core` (3) `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Note
 
@@ -18,7 +18,9 @@ Run `ng build core` and then `ng build` to build the project. The build artifact
 
 To fix the library build problem, disable umd in ng-packard. But this seems to disable lazy loading for the library at all :-( see: https://github.com/ng-packagr/ng-packagr/issues/1285#issuecomment-577729243:
 In file node_modules/ng-packagr/lib/flatten/rollup.js
+
 `const bundle = yield rollup.rollup({
             context: 'this',
             external: moduleId => externalModuleIdStrategy.isExternalDependency(moduleId),
-            inlineDynamicImports: true,  // CHANGE THIS TO TRUE`
+            inlineDynamicImports: true,  // CHANGE THIS TO TRUE
+`
