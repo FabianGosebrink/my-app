@@ -10,8 +10,8 @@ export const coreRoutes: Routes = [
   {
     path: 'submodule',
     loadChildren: () =>
-      import('./core-submodule/core-submodule.module').then(
-        (m) => m.CoreSubmoduleModule
+      import('./core-lazy-loaded-submodule/core-lazy-loaded-submodule.module').then(
+        (m) => m.CoreLazyLoadedSubmoduleModule
       ),
   },
 ];

@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-core',
   template: `
     <p>
-      core works!
+      component-from-a-lazy-loaded-library-module-works!
     </p>
   `,
   styles: [
