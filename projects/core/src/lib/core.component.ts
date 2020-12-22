@@ -2,13 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-core',
-  template: `
-    <p>
-      component-from-a-lazy-loaded-library-module-works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: 'core.component.html'
 })
 export class CoreComponent implements OnInit {
 
